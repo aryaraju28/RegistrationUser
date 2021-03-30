@@ -4,31 +4,81 @@
 }
 
 <h2>Registration</h2>
-@using (Html.BeginForm("Registration1", "Person"))
-{
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
 
-    <label>
-        FirstName
-    </label>
-   @Html.TextBoxFor(m => m.FirstName)<br />
-    <label>
-        LastName
-    </label>
-    @Html.TextBoxFor(m => m.LastName)<br/>
-    <label>
-        College
-    </label>
-    @Html.TextBoxFor(m => m.College)<br/>
-    <label>
-        Department
-    </label>
-    @Html.TextBoxFor(m => m.Department)<br/>
-    <label>
-        Phone
-    </label>
-    @Html.TextBoxFor(m => m.Phone)<br/>
-   <input type="submit" value="Submit"/>
-  }
+
+    @using (Html.BeginForm("Registration1", "Person"))
+    {
+        <table cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <th colspan="2" align="center">Person Details</th>
+            </tr>
+            <tr>
+                <td>FirstName: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.FirstName)
+                </td>
+            </tr>
+            <tr>
+                <td>LastName: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.LastName)
+                </td>
+            </tr>
+            <tr>
+                <td>College : </td>
+                <td>
+                    @Html.TextBoxFor(m => m.College)
+                </td>
+            </tr>
+            <tr>
+                <td>Department : </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Department)
+                </td>
+            </tr>
+            <tr>
+                <td>Phone : </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Phone)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+
+                <td><input type="submit" value="Register" /></td>
+            </tr>
+        </table>
+    }
+</body>
+</html>
+
+@*<label>
+         FirstName
+     </label>
+    @Html.TextBoxFor(m => m.FirstName)<br />
+     <label>
+         LastName
+     </label>
+     @Html.TextBoxFor(m => m.LastName)<br/>
+     <label>
+         College
+     </label>
+     @Html.TextBoxFor(m => m.College)<br/>
+     <label>
+         Department
+     </label>
+     @Html.TextBoxFor(m => m.Department)<br/>
+     <label>
+         Phone
+     </label>
+     @Html.TextBoxFor(m => m.Phone)<br/>
+    <input type="submit" value="Submit"/>*@
 
 
 
