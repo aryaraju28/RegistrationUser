@@ -6,11 +6,27 @@
 <h2>Registration</h2>
 @using (Html.BeginForm("Registration1", "Person"))
 {
-    @Html.TextBoxFor(m => m.FirstName)
-    @Html.TextBoxFor(m => m.LastName)
-    @Html.TextBoxFor(m => m.College)
-    @Html.TextBoxFor(m => m.Department)
-    @Html.TextBoxFor(m => m.Phone)
+
+    <label>
+        FirstName
+    </label>
+   @Html.TextBoxFor(m => m.FirstName)<br />
+    <label>
+        LastName
+    </label>
+    @Html.TextBoxFor(m => m.LastName)<br/>
+    <label>
+        College
+    </label>
+    @Html.TextBoxFor(m => m.College)<br/>
+    <label>
+        Department
+    </label>
+    @Html.TextBoxFor(m => m.Department)<br/>
+    <label>
+        Phone
+    </label>
+    @Html.TextBoxFor(m => m.Phone)<br/>
    <input type="submit" value="Submit"/>
   }
 
